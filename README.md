@@ -1,2 +1,0 @@
-# obsidian_note_repository
-obsidian_repository
