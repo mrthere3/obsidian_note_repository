@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f60200fe214a0eca",
+        "id": "d69814acfead0aa5",
         "type": "tabs",
         "children": [
           {
-            "id": "43c5275506885535",
+            "id": "e9f4fdbe6edf9861",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resource/Template/Front-matter.md",
+                "file": "博客/vue 学习笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resource/Template/Front-matter.md"
+                "file": "博客/vue 学习笔记.md"
               }
             }
           },
@@ -124,6 +124,14 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "3bbce720c7f3a01b",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
               "state": {}
             }
           }
@@ -151,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Resource/Template/Front-matter.md",
+                "file": "博客/vue 学习笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resource/Template/Front-matter.md",
+                "file": "博客/vue 学习笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,15 +202,15 @@
       "obsidian-rich-links:Rich Links": false
     }
   },
-  "active": "3ba0561b1008e5cf",
+  "active": "e9f4fdbe6edf9861",
   "lastOpenFiles": [
+    "Resource/Template/Front-matter.md",
     "博客/vue 学习笔记.md",
     "Excalidraw/Drawing 2023-09-11 21.17.43.excalidraw.md",
     "Excalidraw",
     "obsidian_note_repository/README.md",
     "obsidian_note_repository",
     "新建 文本文档.txt",
-    "Resource/Template/Front-matter.md",
     "Resource/Template",
     "Resource/未命名.md",
     "Resource",

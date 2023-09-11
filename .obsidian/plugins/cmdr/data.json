@@ -10,12 +10,6 @@
   "statusBar": [],
   "pageHeader": [
     {
-      "id": "obsidian-git:open-git-view",
-      "icon": "arrow-up-left",
-      "name": "Obsidian Git: Open source control view",
-      "mode": "any"
-    },
-    {
       "id": "command-palette:open",
       "icon": "lucide-terminal-square",
       "name": "命令面板: 打开命令面板",
@@ -25,6 +19,12 @@
       "id": "command-palette:open",
       "icon": "lucide-terminal-square",
       "name": "打开命令面板",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:push2",
+      "icon": "arrow-up-left",
+      "name": "Obsidian Git: Push",
       "mode": "any"
     }
   ],
