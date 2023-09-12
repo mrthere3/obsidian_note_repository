@@ -48,9 +48,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#todo",
-                "matchingCase": false,
-                "explainSearch": false,
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "35e69266a303dd8c",
@@ -213,8 +212,8 @@
   },
   "active": "fc2ce1d2b7b950dd",
   "lastOpenFiles": [
-    "博客/vue 学习笔记.md",
     "你好.md",
+    "博客/vue 学习笔记.md",
     "Resource/Template/Front-matter.md",
     "Excalidraw/Drawing 2023-09-11 21.17.43.excalidraw.md",
     "Excalidraw",

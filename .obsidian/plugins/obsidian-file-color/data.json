@@ -1,4 +1,15 @@
 {
-  "palette": [],
-  "fileColors": []
+  "palette": [
+    {
+      "id": "q8njpGx0Ts6dJmrDzY6nD",
+      "name": "sky",
+      "value": "#2995a3"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "博客/vue 学习笔记.md",
+      "color": "q8njpGx0Ts6dJmrDzY6nD"
+    }
+  ]
 }

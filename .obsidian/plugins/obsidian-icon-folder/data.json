@@ -6,6 +6,7 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiEditBoxFill",
       "RiTextWrap",
       "RiContrastDropFill"
     ],
@@ -19,5 +20,6 @@
     },
     "iconInTabsEnabled": false
   },
-  "Resource/Template/Front-matter.md": "RiTextWrap"
+  "Resource/Template/Front-matter.md": "RiTextWrap",
+  "博客/vue 学习笔记.md": "RiEditBoxFill"
 }
