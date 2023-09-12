@@ -149,7 +149,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "bf77994fd2e19f29",
@@ -211,10 +211,11 @@
       "obsidian-rich-links:Rich Links": false
     }
   },
-  "active": "bcf485a83e8e0a63",
+  "active": "fc2ce1d2b7b950dd",
   "lastOpenFiles": [
-    "Resource/Template/Front-matter.md",
+    "你好.md",
     "博客/vue 学习笔记.md",
+    "Resource/Template/Front-matter.md",
     "Excalidraw/Drawing 2023-09-11 21.17.43.excalidraw.md",
     "Excalidraw",
     "obsidian_note_repository/README.md",
