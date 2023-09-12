@@ -2,5 +2,7 @@
   "autoPairMarkdown": true,
   "vimMode": true,
   "showLineNumber": true,
-  "defaultViewMode": "source"
+  "defaultViewMode": "source",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true
 }

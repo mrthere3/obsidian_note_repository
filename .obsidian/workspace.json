@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d69814acfead0aa5",
+        "id": "b4993b0e3efc312a",
         "type": "tabs",
         "children": [
           {
-            "id": "e9f4fdbe6edf9861",
+            "id": "fc2ce1d2b7b950dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,21 +48,13 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#todo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "3c4e79739e0fa8ce",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
             }
           },
           {
@@ -73,12 +65,21 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "35e69266a303dd8c",
         "type": "tabs",
         "children": [
+          {
+            "id": "3c4e79739e0fa8ce",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
           {
             "id": "00ed67389a3e7612",
             "type": "leaf",
@@ -87,7 +88,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,16 +112,6 @@
             }
           },
           {
-            "id": "11386e1c9a1e25de",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "博客/vue 学习笔记.md"
-              }
-            }
-          },
-          {
             "id": "1867be023e50eae9",
             "type": "leaf",
             "state": {
@@ -128,11 +120,32 @@
             }
           },
           {
-            "id": "3bbce720c7f3a01b",
+            "id": "096194c39e2f174d",
             "type": "leaf",
             "state": {
-              "type": "todo",
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "90075f860a3cf462",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
               "state": {}
+            }
+          },
+          {
+            "id": "d8287edda287771a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "博客/vue 学习笔记.md"
+              }
             }
           }
         ],
@@ -143,14 +156,11 @@
         "type": "tabs",
         "children": [
           {
-            "id": "096194c39e2f174d",
+            "id": "3bbce720c7f3a01b",
             "type": "leaf",
             "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+              "type": "todo",
+              "state": {}
             }
           },
           {
@@ -182,8 +192,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -202,7 +211,7 @@
       "obsidian-rich-links:Rich Links": false
     }
   },
-  "active": "e9f4fdbe6edf9861",
+  "active": "bcf485a83e8e0a63",
   "lastOpenFiles": [
     "Resource/Template/Front-matter.md",
     "博客/vue 学习笔记.md",
