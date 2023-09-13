@@ -24,5 +24,7 @@
   "obsidian-remember-file-state",
   "dataview",
   "obsidian-reading-time",
-  "obsidian-checklist-plugin"
+  "obsidian-checklist-plugin",
+  "templater-obsidian",
+  "obsidian-image-toolkit"
 ]
