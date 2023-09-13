@@ -3,7 +3,14 @@
   "showAddCommand": true,
   "debug": false,
   "editorMenu": [],
-  "fileMenu": [],
+  "fileMenu": [
+    {
+      "id": "bookmarks:bookmark-current-section",
+      "icon": "lucide-bookmark-plus",
+      "name": "书签: 为当前鼠标下区块加上书签……",
+      "mode": "any"
+    }
+  ],
   "leftRibbon": [],
   "rightRibbon": [],
   "titleBar": [],
@@ -25,6 +32,18 @@
       "id": "obsidian-git:push2",
       "icon": "arrow-up-left",
       "name": "Obsidian Git: Push",
+      "mode": "any"
+    },
+    {
+      "id": "bookmarks:bookmark-current-section",
+      "icon": "lucide-bookmark-plus",
+      "name": "书签: 为当前鼠标下区块加上书签……",
+      "mode": "any"
+    },
+    {
+      "id": "bookmarks:bookmark-current-section",
+      "icon": "lucide-bookmark-plus",
+      "name": "书签: 为当前鼠标下区块加上书签……",
       "mode": "any"
     }
   ],

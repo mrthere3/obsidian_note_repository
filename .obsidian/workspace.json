@@ -72,18 +72,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3c4e79739e0fa8ce",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
-            }
-          },
-          {
             "id": "00ed67389a3e7612",
             "type": "leaf",
             "state": {
               "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "3c4e79739e0fa8ce",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -102,14 +102,6 @@
         "id": "6a27f978d492cabe",
         "type": "tabs",
         "children": [
-          {
-            "id": "9721b090da27b7e2",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
           {
             "id": "1867be023e50eae9",
             "type": "leaf",
@@ -147,8 +139,21 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "18943fe5b4a061d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9721b090da27b7e2",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
       },
       {
         "id": "bf77994fd2e19f29",
@@ -212,8 +217,8 @@
   },
   "active": "fc2ce1d2b7b950dd",
   "lastOpenFiles": [
-    "你好.md",
     "博客/vue 学习笔记.md",
+    "你好.md",
     "Resource/Template/Front-matter.md",
     "Excalidraw/Drawing 2023-09-11 21.17.43.excalidraw.md",
     "Excalidraw",

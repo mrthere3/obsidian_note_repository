@@ -43,17 +43,5 @@
     ],
     "defaultFilterType": "tree"
   },
-  "treeData": [
-    {
-      "id": "4510a46b66ee5910",
-      "parent": 0,
-      "droppable": true,
-      "text": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    }
-  ]
+  "treeData": []
 }
