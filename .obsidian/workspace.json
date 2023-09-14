@@ -11,11 +11,10 @@
             "id": "8e00b15184526338",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "博客/vue+tailwind+elementplus.md",
-                "mode": "source",
-                "source": false
+                "file": ".gitignore",
+                "staged": false
               }
             }
           }
@@ -134,9 +133,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "博客/vue+tailwind+elementplus.md"
-              }
+              "state": {}
             }
           },
           {
@@ -183,7 +180,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "博客/vue+tailwind+elementplus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +196,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "博客/vue+tailwind+elementplus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,8 +223,8 @@
   },
   "active": "8e00b15184526338",
   "lastOpenFiles": [
-    "Resource/Template/HEXO.md",
     "博客/vue+tailwind+elementplus.md",
+    "Resource/Template/HEXO.md",
     "博客/vue 学习笔记.md",
     "Untitled.md",
     "Resource/Template/日志.md",
