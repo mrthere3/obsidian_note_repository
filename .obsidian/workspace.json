@@ -11,10 +11,11 @@
             "id": "8e00b15184526338",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": ".gitignore",
-                "staged": false
+                "file": "博客/vue+tailwind+elementplus.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -133,7 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "博客/vue+tailwind+elementplus.md"
+              }
             }
           },
           {
@@ -180,6 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "博客/vue+tailwind+elementplus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,6 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "博客/vue+tailwind+elementplus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
