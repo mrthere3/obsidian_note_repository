@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Resource/Template/HEXO.md",
                 "mode": "source",
                 "source": false
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Resource/Template/HEXO.md"
               }
             }
           },
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Resource/Template/HEXO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Resource/Template/HEXO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,12 +226,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3ba0561b1008e5cf",
+  "active": "8e00b15184526338",
   "lastOpenFiles": [
+    "博客/Untitled.md",
+    "Resource/Template/HEXO.md",
     "博客/vue 学习笔记.md",
     "Untitled.md",
     "Resource/Template/日志.md",
-    "Resource/Template/HEXO.md",
     "Daily/2023/09/09-14.md",
     "Daily/2023/09",
     "Daily/2023",

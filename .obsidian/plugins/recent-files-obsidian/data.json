@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
+      "basename": "HEXO",
+      "path": "Resource/Template/HEXO.md"
+    },
+    {
       "basename": "Untitled",
-      "path": "Untitled.md"
+      "path": "博客/Untitled.md"
     },
     {
       "basename": "vue 学习笔记",
@@ -11,10 +15,6 @@
     {
       "basename": "日志",
       "path": "Resource/Template/日志.md"
-    },
-    {
-      "basename": "HEXO",
-      "path": "Resource/Template/HEXO.md"
     },
     {
       "basename": "09-14",
