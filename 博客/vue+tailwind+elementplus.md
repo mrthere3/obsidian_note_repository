@@ -18,5 +18,5 @@ weather: 天气：☁️   阴 气温：+22°C 风力：↙11km/h
 > 《眼儿媚·秋思》
 
 #todo
-- [ ] 书写前端项目搭建
+- [x] 书写前端项目搭建
 - [ ] 集成 tailwindcss 和 elmentplus 开发项目
