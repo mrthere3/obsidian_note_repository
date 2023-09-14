@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resource/Template/日志.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ab0ed4cc7abdc4fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Resource/Template/HEXO.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -148,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resource/Template/HEXO.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -196,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Resource/Template/HEXO.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resource/Template/HEXO.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -239,8 +226,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ab0ed4cc7abdc4fd",
+  "active": "3ba0561b1008e5cf",
   "lastOpenFiles": [
+    "博客/vue 学习笔记.md",
+    "Untitled.md",
     "Resource/Template/日志.md",
     "Resource/Template/HEXO.md",
     "Daily/2023/09/09-14.md",
@@ -252,7 +241,6 @@
     "Resource/templater_script/get_pomes.js",
     "Resource/templater_script",
     "2023-09-13.md",
-    "博客/vue 学习笔记.md",
     "你好.md",
     "Excalidraw/Drawing 2023-09-11 21.17.43.excalidraw.md",
     "Excalidraw",
