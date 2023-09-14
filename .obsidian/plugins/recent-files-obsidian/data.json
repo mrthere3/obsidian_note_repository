@@ -5,12 +5,8 @@
       "path": "Resource/Template/HEXO.md"
     },
     {
-      "basename": "Untitled",
-      "path": "博客/Untitled.md"
-    },
-    {
-      "basename": "vue 学习笔记",
-      "path": "博客/vue 学习笔记.md"
+      "basename": "vue+tailwind+elementplus",
+      "path": "博客/vue+tailwind+elementplus.md"
     },
     {
       "basename": "日志",
