@@ -1,0 +1,10 @@
+{
+  "autoPairMarkdown": true,
+  "vimMode": false,
+  "showLineNumber": true,
+  "defaultViewMode": "source",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "promptDelete": false,
+  "newLinkFormat": "absolute"
+}
