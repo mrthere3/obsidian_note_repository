@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "HEXO",
-      "path": "Resource/Template/HEXO.md"
-    },
-    {
       "basename": "vue+tailwind+elementplus",
       "path": "博客/vue+tailwind+elementplus.md"
+    },
+    {
+      "basename": "HEXO",
+      "path": "Resource/Template/HEXO.md"
     },
     {
       "basename": "日志",
