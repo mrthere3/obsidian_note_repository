@@ -62,5 +62,35 @@
       ],
       "key": "E"
     }
+  ],
+  "templater-obsidian:create-new-note-from-template": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "n"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ],
+  "workspace:goto-tab-1": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
+  ],
+  "workspace:goto-tab-2": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "2"
+    }
   ]
 }

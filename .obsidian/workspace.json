@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Resource/Template/日志.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ab0ed4cc7abdc4fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Resource/Template/HEXO.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -226,14 +239,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8e00b15184526338",
+  "active": "ab0ed4cc7abdc4fd",
   "lastOpenFiles": [
-    "Daily/2023/09/09-14.md",
     "Resource/Template/日志.md",
+    "Resource/Template/HEXO.md",
+    "Daily/2023/09/09-14.md",
     "Daily/2023/09",
     "Daily/2023",
     "Daily",
-    "Resource/Template/HEXO.md",
     "Resource/templater_script/get_weather.js",
     "Resource/templater_script/get_sentence.js",
     "Resource/templater_script/get_pomes.js",

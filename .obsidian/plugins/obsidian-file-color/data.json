@@ -2,18 +2,33 @@
   "palette": [
     {
       "id": "q8njpGx0Ts6dJmrDzY6nD",
-      "name": "sky",
+      "name": "md",
       "value": "#2995a3"
     },
     {
       "id": "9gsOJVRy6XJxCQObAj_ja",
-      "name": "green",
+      "name": "code",
       "value": "#2eb23d"
     },
     {
       "id": "AHLsdeEiP-gA0bNcEFnUV",
       "name": "blue",
       "value": "#205bcf"
+    },
+    {
+      "id": "npRRWYrFxJrXZSjNQFp3I",
+      "name": "template",
+      "value": "#bbc624"
+    },
+    {
+      "id": "AxTow7EPK5UmhN0eMAgXK",
+      "name": "dayily",
+      "value": "#2ebd8d"
+    },
+    {
+      "id": "wSiDcsb9NJ1mlAYjMNO9Z",
+      "name": "",
+      "value": "#ffffff"
     }
   ],
   "fileColors": [
@@ -32,6 +47,18 @@
     {
       "path": "Resource/templater_script/get_weather.js",
       "color": "9gsOJVRy6XJxCQObAj_ja"
+    },
+    {
+      "path": "Resource/Template/日志.md",
+      "color": "npRRWYrFxJrXZSjNQFp3I"
+    },
+    {
+      "path": "Resource/Template/HEXO.md",
+      "color": "npRRWYrFxJrXZSjNQFp3I"
+    },
+    {
+      "path": "Daily/2023/09/09-14.md",
+      "color": "AxTow7EPK5UmhN0eMAgXK"
     }
   ]
 }
