@@ -1,6 +1,6 @@
 {
   "autoPairMarkdown": true,
-  "vimMode": true,
+  "vimMode": false,
   "showLineNumber": true,
   "defaultViewMode": "source",
   "alwaysUpdateLinks": true,

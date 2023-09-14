@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resource/Template/日志.md",
+                "file": "Resource/Template/HEXO.md",
                 "mode": "source",
                 "source": false
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resource/Template/日志.md"
+                "file": "Resource/Template/HEXO.md"
               }
             }
           },
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Resource/Template/日志.md",
+                "file": "Resource/Template/HEXO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resource/Template/日志.md",
+                "file": "Resource/Template/HEXO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,11 +229,11 @@
   "active": "8e00b15184526338",
   "lastOpenFiles": [
     "Daily/2023/09/09-14.md",
+    "Resource/Template/日志.md",
     "Daily/2023/09",
     "Daily/2023",
-    "Resource/Template/日志.md",
     "Daily",
-    "Resource/Template/Front-matter.md",
+    "Resource/Template/HEXO.md",
     "Resource/templater_script/get_weather.js",
     "Resource/templater_script/get_sentence.js",
     "Resource/templater_script/get_pomes.js",
