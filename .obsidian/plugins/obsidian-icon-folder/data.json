@@ -6,6 +6,7 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiNodedotjs",
       "RiEditBoxFill",
       "RiTextWrap",
       "RiContrastDropFill"
@@ -21,5 +22,8 @@
     "iconInTabsEnabled": false
   },
   "Resource/Template/Front-matter.md": "RiTextWrap",
-  "博客/vue 学习笔记.md": "RiEditBoxFill"
+  "博客/vue 学习笔记.md": "RiEditBoxFill",
+  "Resource/templater_script/get_pomes.js": "SiNodedotjs",
+  "Resource/templater_script/get_sentence.js": "SiNodedotjs",
+  "Resource/templater_script/get_weather.js": "SiNodedotjs"
 }

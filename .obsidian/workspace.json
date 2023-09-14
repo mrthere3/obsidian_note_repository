@@ -11,8 +11,12 @@
             "id": "8e00b15184526338",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Resource/Template/日志.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -130,7 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Resource/Template/日志.md"
+              }
             }
           },
           {
@@ -177,6 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Resource/Template/日志.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,6 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Resource/Template/日志.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,8 +226,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3ba0561b1008e5cf",
+  "active": "8e00b15184526338",
   "lastOpenFiles": [
+    "Daily/2023/09/09-14.md",
+    "Daily/2023/09",
+    "Daily/2023",
+    "Resource/Template/日志.md",
+    "Daily",
+    "Resource/Template/Front-matter.md",
     "Resource/templater_script/get_weather.js",
     "Resource/templater_script/get_sentence.js",
     "Resource/templater_script/get_pomes.js",
@@ -227,19 +241,14 @@
     "2023-09-13.md",
     "博客/vue 学习笔记.md",
     "你好.md",
-    "Resource/Template/Front-matter.md",
     "Excalidraw/Drawing 2023-09-11 21.17.43.excalidraw.md",
     "Excalidraw",
     "obsidian_note_repository/README.md",
     "obsidian_note_repository",
     "新建 文本文档.txt",
-    "Resource/Template",
     "Resource/未命名.md",
-    "Resource",
     "博客/vue.md",
-    "博客/未命名",
     "博客/vue.md",
-    "2023-09-11.md",
-    "博客"
+    "2023-09-11.md"
   ]
 }

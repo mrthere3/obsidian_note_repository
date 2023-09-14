@@ -4,12 +4,34 @@
       "id": "q8njpGx0Ts6dJmrDzY6nD",
       "name": "sky",
       "value": "#2995a3"
+    },
+    {
+      "id": "9gsOJVRy6XJxCQObAj_ja",
+      "name": "green",
+      "value": "#2eb23d"
+    },
+    {
+      "id": "AHLsdeEiP-gA0bNcEFnUV",
+      "name": "blue",
+      "value": "#205bcf"
     }
   ],
   "fileColors": [
     {
       "path": "博客/vue 学习笔记.md",
       "color": "q8njpGx0Ts6dJmrDzY6nD"
+    },
+    {
+      "path": "Resource/templater_script/get_pomes.js",
+      "color": "9gsOJVRy6XJxCQObAj_ja"
+    },
+    {
+      "path": "Resource/templater_script/get_sentence.js",
+      "color": "9gsOJVRy6XJxCQObAj_ja"
+    },
+    {
+      "path": "Resource/templater_script/get_weather.js",
+      "color": "9gsOJVRy6XJxCQObAj_ja"
     }
   ]
 }
