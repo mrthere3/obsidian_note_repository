@@ -1,22 +1,23 @@
 <%*
-let tags = await tp.system.prompt("tags：python")
-let titleName = await tp.system.prompt("title：Your file name")
+let tags = await tp.system.prompt("tags","python")
+let titleName = await tp.system.prompt("title：Your file name",tp.date.now("YYYY-MM-DD"))
+let categories = await tp.system.prompt("categories")
 let createTime = tp.file.creation_date()
 let modificationDate = tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss")
 -%>
 
 title: <% tp.file.title %>  
-categories:  
-  - 
-tags:  
-  - 
+categories: <% categories %>
+tags: <% tags %>
 mathjax: true  
 date: <% tp.file.creation_date() %>   
 updated: <% tp.file.last_modified_date() %>   
 weather: <% tp.user.get_weather() %>
 
 ---
-每日诗词
+
+<% tp.web.random_picture("", "landscape") %>
+
 <% tp.user.get_pomes() %>
 
 
