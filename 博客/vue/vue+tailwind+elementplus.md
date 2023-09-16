@@ -1,8 +1,8 @@
-title:   
-categories:  
-  - 
-tags:  
-  - 
+title: tailwind+elementplus 
+categories: vue
+tags: 
++ tailwindcss 
++ element-plus
 mathjax: true  
 date: 2023-09-14 22:35   
 updated: 2023-09-14 22:35   
