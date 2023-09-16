@@ -1,3 +1,10 @@
+<%*
+let tags = await tp.system.prompt("tags：python")
+let titleName = await tp.system.prompt("title：Your file name")
+let createTime = tp.file.creation_date()
+let modificationDate = tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss")
+-%>
+
 title: <% tp.file.title %>  
 categories:  
   - 
@@ -11,3 +18,13 @@ weather: <% tp.user.get_weather() %>
 ---
 每日诗词
 <% tp.user.get_pomes() %>
+
+
+
+
+
+<%*
+let destDir = "/博客/" + tags 
+await tp.file.move(destDir + "/" + titleName)
+tp.file.cursor()
+-%>
