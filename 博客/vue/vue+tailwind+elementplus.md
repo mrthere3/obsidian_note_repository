@@ -17,9 +17,6 @@ weather: 天气：☁️   阴 气温：+22°C 风力：↙11km/h
 > —— 刘基  
 > 《眼儿媚·秋思》
 
-#todo
-- [x] 书写前端项目搭建
-- [x] 集成 tailwindcss 和 elmentplus 开发项目
 
 ![5_Journey_8k 1](https://source.wjwsm.top/5_Journey_8k%201.jpg)
 
@@ -175,6 +172,6 @@ app.use(ElementPlus).use(router).use(pinia);
 app.mount("#app");
 ```
 
->说实话一个小项目我用的到的轮子,还挺多 route,pinal
+>说实话一个小项目我用的到的轮子,还挺多 route,pinia 啥的都有涉及,axios 二次封装其实我也涉及到一点,后续看情况再更新把
 
 > 感觉这个轮子,对后端开发来说,还是很方便的,写完一个两三页面加一些接口,直接用 vue build 丢在服务器上很爽.后续会更新一些 vue 后端新手开发的坑,感觉现在网上还是 vue2 用的比较多,大家好像都对 vue3 选项式 api 开发很少,我自己反而写前端很爱 api 形式!
