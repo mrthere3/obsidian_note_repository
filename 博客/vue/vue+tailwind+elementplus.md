@@ -100,7 +100,7 @@ npm run build
 ```
 
 如下图所示,这是构建之后的目录结构
-![[Pasted image 20230917170627.png]]
+![Pasted image 20230917170627](https://source.wjwsm.top/Pasted%20image%2020230917170627.png)
 
 ### 安装 elment-plus
 ```js
@@ -128,4 +128,53 @@ npm install -D tailwindcss
 npx tailwindcss init
 ```
 
-在项目根目录下创建 tailwindcss.config.js 文件
+在项目根目录下创建 tailwindcss.config.js 文件,写入如下配置.
+```js
+/** @type {import('tailwindcss').Config} */  
+module.exports = {  
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],  
+  theme: {  
+    extend: {},  
+  },  
+  plugins: [],  
+};
+```
+
+在 src 下创建 tailwind.css 文件写入如下
+```js
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+之后在 main.js 再次全局导入
+```js
+import "./tailwind.css";
+```
+
+这样就算导入完成了.这样三个都已经安装配置完成,就可以很开心的使用.
+
+完整的 main.js
+```js
+import "./tailwind.css";  
+import ElementPlus from "element-plus";  
+  
+import { createApp } from "vue";  
+import App from "./App.vue";  
+import * as ElementPlusIconsVue from "@element-plus/icons-vue";  
+import "element-plus/dist/index.css";  
+import { createPinia } from "pinia";  
+import { router } from "./router";  
+  
+const app = createApp(App);  
+const pinia = createPinia();  
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {  
+  app.component(key, component);  
+}  
+app.use(ElementPlus).use(router).use(pinia);  
+app.mount("#app");
+```
+
+>说实话一个小项目我用的到的轮子,还挺多 route,pinal
+
+> 感觉这个轮子,对后端开发来说,还是很方便的,写完一个两三页面加一些接口,直接用 vue build 丢在服务器上很爽.后续会更新一些 vue 后端新手开发的坑,感觉现在网上还是 vue2 用的比较多,大家好像都对 vue3 选项式 api 开发很少,我自己反而写前端很爱 api 形式!
