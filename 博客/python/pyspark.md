@@ -21,7 +21,7 @@ weather: 天气：⛅️  少云 气温：+28°C 风力：↗12km/h
 
 
 #todo
-- [ ] spark 学习笔记记录
+- [x] spark 学习笔记记录
 
 <font color="#00b050">参考资料</font>
 
