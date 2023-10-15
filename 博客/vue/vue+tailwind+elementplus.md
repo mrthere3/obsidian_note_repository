@@ -1,14 +1,12 @@
-title: tailwind+elementplus 
-categories: vue
-tags: 
-+ tailwindcss 
-+ element-plus
-mathjax: true  
-date: 2023-09-14 22:35   
-updated: 2023-09-14 22:35   
-weather: 天气：☁️   阴 气温：+22°C 风力：↙11km/h
-
 ---
+categories: 
+cover:
+aliases: [为什么要使用 tailwindcss 和 elment-plus]
+linter-yaml-title-alias: 为什么要使用 tailwindcss 和 elment-plus
+created: 2023-09-17 02:14
+updated: 2023-10-15 05:17
+---
+
 每日诗词
 > 无情明月，  
 > 有情归梦，  
