@@ -1,3 +1,13 @@
+---
+cover:
+categories: go日志
+created: 2023-10-30 11:52
+title: zap 介绍与使用
+updated: 2023-10-30 11:53
+tags: [Go]
+aliases: [zap 介绍与使用]
+linter-yaml-title-alias: zap 介绍与使用
+---
 # zap 介绍与使用
 
 zap 是 go 中非常快,结构化的,分日志级别的日志库
