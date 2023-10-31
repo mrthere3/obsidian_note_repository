@@ -673,3 +673,5 @@ DB.Model(&product).Update("price", gorm.Expr("price * ? + ?", 2, 100))
       return nil
     }
 ```
+
+参考资料 [GORM · Go语言中文文档 (topgoer.com)](https://www.topgoer.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/gorm/)
