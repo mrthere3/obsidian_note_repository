@@ -635,3 +635,41 @@ DB.Model(&product).Update("price", gorm.Expr("price * ? + ?", 2, 100))
         // 没有信用卡被发现处理...
     }
 ```
+
+# 1.9 *GORM 事务*
+要在事务中执行一组操作，一般流程如下。
+```go
+    // 开始事务
+    tx := db.Begin()
+
+    // 在事务中做一些数据库操作（从这一点使用'tx'，而不是'db'）
+    tx.Create(...)
+
+    // ...
+
+    // 发生错误时回滚事务
+    tx.Rollback()
+
+    // 或提交事务
+    tx.Commit()
+```
+
+```go
+    func CreateAnimals(db *gorm.DB) err {
+      tx := db.Begin()
+      // 注意，一旦你在一个事务中，使用tx作为数据库句柄
+
+      if err := tx.Create(&Animal{Name: "Giraffe"}).Error; err != nil {
+         tx.Rollback()
+         return err
+      }
+
+      if err := tx.Create(&Animal{Name: "Lion"}).Error; err != nil {
+         tx.Rollback()
+         return err
+      }
+
+      tx.Commit()
+      return nil
+    }
+```
