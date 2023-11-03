@@ -1,19 +1,20 @@
 ---
 categories: 
-cover:
+cover: 
 title: gorm 使用记录
 created: 2023-10-31 09:34
 updated: 2023-10-31 09:35
+number headings: auto, first-level 1, max 6, 1.1
 ---
-# *GORM 介绍*
+# 1 *GORM 介绍*
 GORM 是使用 Go 语言开发的友好的 ORM 库。
 
-# 1.1 GORM 安装
+# 2 GORM 安装
 ```shell
 go get -u github.com/jinzhu/gorm
 ```
 
-# 1.2 连接池
+# 3 连接池
 ```go
    // 获取通用数据库对象`*sql.DB`以使用其函数
     db.DB()
@@ -25,7 +26,7 @@ go get -u github.com/jinzhu/gorm
     db.DB().SetMaxOpenConns(100)
 ```
 
-# 1.3 *GORM 开启日志*
+# 4 *GORM 开启日志*
 GORM 有一个默认的 logger 实现,默认情况下,它会打印慢 sql 和错误
 下面是官方的例子:
 
@@ -169,8 +170,8 @@ func GormMysql() *gorm.DB {
 }
 ```
 
-# 1.4-5 GORM 查询
-## 1.4.1 查询
+# 5 GORM 查询
+## 5.1 查询
 ```go
    // 获取第一条记录，按主键排序
     db.First(&user)
@@ -189,7 +190,7 @@ func GormMysql() *gorm.DB {
     //// SELECT * FROM users WHERE id = 10;
 ```
 
-## 1.4.2 where 查询
+## 5.2 where 查询
 ```go
     // 获取第一个匹配记录
     db.Where("name = ?", "jinzhu").First(&user)
@@ -216,7 +217,7 @@ func GormMysql() *gorm.DB {
     db.Where("created_at BETWEEN ? AND ?", lastWeek, today).Find(&users)
 ```
 
-## 1.4.3  Where 查询条件 (Struct & Map)
+## 5.3 Where 查询条件 (Struct & Map)
 ```go
  // Struct
     db.Where(&User{Name: "jinzhu", Age: 20}).First(&user)
@@ -230,7 +231,7 @@ func GormMysql() *gorm.DB {
     db.Where([]int64{20, 21, 22}).Find(&users)
     //// SELECT * FROM users WHERE id IN (20, 21, 22);
 ```
-## 1.4.4 NOT 条件查询
+## 5.4 NOT 条件查询
 ```go
     db.Not("name", "jinzhu").First(&user)
     //// SELECT * FROM users WHERE name <> "jinzhu" LIMIT 1;
@@ -255,7 +256,7 @@ func GormMysql() *gorm.DB {
     //// SELECT * FROM users WHERE name <> "jinzhu";
 ```
 
-## 1.4.5 带内联条件的查询
+## 5.5 带内联条件的查询
 ```go
     // 按主键获取
     db.First(&user, 23)
@@ -277,7 +278,7 @@ func GormMysql() *gorm.DB {
     //// SELECT * FROM users WHERE age = 20;
 ```
 
-## 1.4.6 OR 条件查询
+## 5.6 OR 条件查询
 ```go
    db.Where("role = ?", "admin").Or("role = ?", "super_admin").Find(&users)
     //// SELECT * FROM users WHERE role = 'admin' OR role = 'super_admin';
@@ -290,7 +291,7 @@ func GormMysql() *gorm.DB {
     db.Where("name = 'jinzhu'").Or(map[string]interface{}{"name": "jinzhu 2"}).Find(&users)
 ```
 
-## 1.4.7 查询链(链式调用)
+## 5.7 查询链(链式调用)
 ```go
 	 db.Where("name <> ?","jinzhu").Where("age >= ? and role <> ?",20,"admin").Find(&users)
     //// SELECT * FROM users WHERE name <> 'jinzhu' AND age >= 20 AND role <> 'admin';
@@ -298,7 +299,7 @@ func GormMysql() *gorm.DB {
     db.Where("role = ?", "admin").Or("role = ?", "super_admin").Not("name = ?", "jinzhu").Find(&users)
 ```
 
-## 1.4.8  FirstOrInit
+## 5.8 FirstOrInit
 获取第一个匹配的记录，或者使用给定的条件初始化一个新的记录（仅适用于struct，map条件）
 ```go
    // Unfound
@@ -311,7 +312,7 @@ func GormMysql() *gorm.DB {
     db.FirstOrInit(&user, map[string]interface{}{"name": "jinzhu"})
     //// user -> User{Id: 111, Name: "Jinzhu", Age: 20}
 ```
-## 1.4.9  Attrs
+## 5.9 Attrs
 如果未找到记录，则使用参数初始化结构
 
 ```go
@@ -330,7 +331,7 @@ func GormMysql() *gorm.DB {
     //// user -> User{Id: 111, Name: "Jinzhu", Age: 20}
 ```
 
-## 1.4.9.1  Assign
+## 5.10 Assign
 将参数分配给结果，不管它是否被找到
 ```go
     db.Where(User{Name: "non_existing"}).Assign(User{Age: 20}).FirstOrInit(&user)
@@ -342,7 +343,7 @@ func GormMysql() *gorm.DB {
     //// user -> User{Id: 111, Name: "Jinzhu", Age: 30}
 ```
 
-## 1.5.0 Select
+## 5.11 Select
 指定要从数据库检索的字段，默认情况下，将选择所有字段;
 ```go
 
@@ -356,7 +357,7 @@ func GormMysql() *gorm.DB {
     //// SELECT COALESCE(age,'42') FROM users;
 ```
 
-## 1.5.2 Order
+## 5.12 Order
 在从数据库检索记录时指定顺序，将重排序设置为true以覆盖定义的条件
 ```go
  db.Order("age desc, name").Find(&users)
@@ -372,7 +373,7 @@ func GormMysql() *gorm.DB {
     //// SELECT * FROM users ORDER BY age; (users2)
 ```
 
-## 1.5.3 Limit
+## 5.13 Limit
 指定要检索的记录数
 
 ```go
@@ -385,7 +386,7 @@ func GormMysql() *gorm.DB {
     //// SELECT * FROM users; (users2)
 ```
 
-## 1.5.4 offset
+## 5.14 offset
 指定在开始返回记录之前要跳过的记录数
 ```go
    db.Offset(3).Find(&users)
@@ -397,7 +398,7 @@ func GormMysql() *gorm.DB {
     //// SELECT * FROM users; (users2)
 ```
 
-## 1.5.5 Count
+## 5.15 Count
 获取模型的记录数
 ```go
     db.Where("name = ?", "jinzhu").Or("name = ?", "jinzhu 2").Find(&users).Count(&count)
@@ -411,7 +412,7 @@ func GormMysql() *gorm.DB {
     //// SELECT count(*) FROM deleted_users;
 ```
 
-## 1.5.6 Group & Having
+## 5.16 Group & Having
 ```go
 rows, err := db.Table("orders").Select("date(created_at) as date, sum(amount) as total").Group("date(created_at)").Rows()
     for rows.Next() {
@@ -430,7 +431,7 @@ rows, err := db.Table("orders").Select("date(created_at) as date, sum(amount) as
     db.Table("orders").Select("date(created_at) as date, sum(amount) as total").Group("date(created_at)").Having("sum(amount) > ?", 100).Scan(&results)
 ```
 
-## 1.5.7 Join
+## 5.17 Join
 指定连接条件
 
 ```go
@@ -445,7 +446,7 @@ rows, err := db.Table("users").Select("users.name, emails.email").Joins("left jo
     db.Joins("JOIN emails ON emails.user_id = users.id AND emails.email = ?", "jinzhu@example.org").Joins("JOIN credit_cards ON credit_cards.user_id = users.id").Where("credit_cards.number = ?", "411111111111").Find(&user)
 ```
 
-## 1.5.8  Pluck
+## 5.18 Pluck
 将模型中的单个列作为地图查询，如果要查询多个列，可以使用 Scan
 ```go
     var ages []int64
@@ -460,7 +461,7 @@ rows, err := db.Table("users").Select("users.name, emails.email").Joins("left jo
     db.Select("name, age").Find(&users)
 ```
 
-## 1.5.9 Scan
+## 5.19 Scan
 将结果扫描到另一个结构中。
 ```go
  type Result struct {
@@ -475,7 +476,7 @@ rows, err := db.Table("users").Select("users.name, emails.email").Joins("left jo
     db.Raw("SELECT name, age FROM users WHERE name = ?", 3).Scan(&result)
 ```
 
-## 1.5.9.2 Scopes
+## 5.20 Scopes
 将当前数据库连接传递到 `func(*DB) *DB`，可以用于动态添加条件
 ```go
    func AmountGreaterThan1000(db *gorm.DB) *gorm.DB {
@@ -505,8 +506,8 @@ rows, err := db.Table("users").Select("users.name, emails.email").Joins("left jo
     db.Scopes(OrderStatus([]string{"paid", "shipped"})).Find(&orders)
     // 查找所有付费，发货订单
 ```
-# 1.6 GORM 更新
-## 1.6.1 更新全部字段
+# 6 GORM 更新
+## 6.1 更新全部字段
 Save 将包括执行更新 SQL 时的所有字段，即使它没有更改
 ```go
   db.First(&user)
@@ -518,7 +519,7 @@ Save 将包括执行更新 SQL 时的所有字段，即使它没有更改
     //// UPDATE users SET name='jinzhu 2', age=100, birthday='2016-01-01', updated_at = '2013-11-17 21:34:10' WHERE id=111;
 ```
 
-## 1.6.2 更新更改字段
+## 6.2 更新更改字段
 如果只想更新更改的字段，可以使用 Update,Updates
 ```go
  // 更新单个属性（如果更改）
@@ -542,7 +543,7 @@ Save 将包括执行更新 SQL 时的所有字段，即使它没有更改
     db.Model(&user).Updates(User{Name: "", Age: 0, Actived: false})
 ```
 
-## 1.6.3 更新选择的字段
+## 6.3 更新选择的字段
 如果您只想在更新时更新或忽略某些字段，可以使用 Select,Omit
 ```go
 db.Model(&user).Select("name").Updates(map[string]interface{}{"name": "hello", "age": 18, "actived": false})
@@ -553,7 +554,7 @@ db.Model(&user).Select("name").Updates(map[string]interface{}{"name": "hello", "
 
 ```
 
-## 1.6.4  更新更改字段但不进行 Callbacks
+## 6.4 更新更改字段但不进行 Callbacks
 以上更新操作将执行模型的 BeforeUpdate,AfterUpdate 方法，更新其 UpdatedAt 时间戳，在更新时保存它的 Associations，如果不想调用它们，可以使用 UpdateColumn,UpdateColumns
 ```go
     // 更新单个属性，类似于`Update`
@@ -565,7 +566,7 @@ db.Model(&user).Select("name").Updates(map[string]interface{}{"name": "hello", "
     //// UPDATE users SET name='hello', age=18 WHERE id = 111;
 ```
 
-## 1.6.5  Batch Updates 批量更新
+## 6.5 Batch Updates 批量更新
 Callbacks 在批量更新时不会运行
 ```go
     db.Table("users").Where("id IN (?)", []int{10, 11}).Updates(map[string]interface{}{"name": "hello", "age": 18})
@@ -579,7 +580,7 @@ Callbacks 在批量更新时不会运行
     db.Model(User{}).Updates(User{Name: "hello", Age: 18}).RowsAffected
 ```
 
-## 1.6.6 使用 SQL 表达式更新
+## 6.6 使用 SQL 表达式更新
 ```go
 DB.Model(&product).Update("price", gorm.Expr("price * ? + ?", 2, 100))
     //// UPDATE "products" SET "price" = price * '2' + '100', "updated_at" = '2013-11-17 21:34:10' WHERE "id" = '2';
@@ -594,8 +595,8 @@ DB.Model(&product).Update("price", gorm.Expr("price * ? + ?", 2, 100))
     //// UPDATE "products" SET "quantity" = quantity - 1 WHERE "id" = '2' AND quantity > 1;
 ```
 
-# 1.7 GORM 删除
-## 1.7.1 删除/软删除
+# 7 GORM 删除
+## 7.1 删除/软删除
 警告删除记录时，需要确保其主要字段具有值，GORM 将使用主键删除记录，如果主要字段为空，GORM 将删除模型的所有记录
 ```go
    // 删除存在的记录
@@ -607,7 +608,7 @@ DB.Model(&product).Update("price", gorm.Expr("price * ? + ?", 2, 100))
     //// DELETE from emails where id=10 OPTION (OPTIMIZE FOR UNKNOWN);
 ```
 
-## 1.7.2 批量删除
+## 7.2 批量删除
 删除所有匹配记录
 
 ```go
@@ -618,7 +619,7 @@ DB.Model(&product).Update("price", gorm.Expr("price * ? + ?", 2, 100))
     //// DELETE from emails where email LIKE "%jinhu%";
 ```
 
-# 1.8 错误处理
+# 8 错误处理
 执行任何操作后，如果发生任何错误，GORM 将其设置为 `*DB` 的 Error 字段
 ```go
     if err := db.Where("name = ?", "jinzhu").First(&user).Error; err != nil {
@@ -636,7 +637,7 @@ DB.Model(&product).Update("price", gorm.Expr("price * ? + ?", 2, 100))
     }
 ```
 
-# 1.9 *GORM 事务*
+# 9 *GORM 事务*
 要在事务中执行一组操作，一般流程如下。
 ```go
     // 开始事务
