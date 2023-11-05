@@ -1,6 +1,6 @@
 ---
-categories: 
-cover:
+categories: go
+cover: 
 title: Vipper配置解析库
 created: 2023-11-05 08:23
 updated: 2023-11-05 08:23
