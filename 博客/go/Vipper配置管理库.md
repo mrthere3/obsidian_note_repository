@@ -1,9 +1,10 @@
 ---
 categories: go
 cover: 
-title: Vipper配置解析库
+title: Vipper配置管理库
 created: 2023-11-05 08:23
-updated: 2023-11-05 08:23
+updated: 2023-12-19
+date: 2023-11-05
 ---
 # Vipper 
 vipper 是适用于 Go 应用程序的完整配置解决烦啊.他被设计用于在应用程序中工作.
