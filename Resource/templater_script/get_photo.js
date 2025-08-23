@@ -4,8 +4,9 @@
  * @HomePage        : https://github.com/dmscode/Obsidian-Templates
  */
 async function get_photo() {
-  const response = await fetch("https://bing.img.run/rand.php")
-  const imgurl = await response.url
+  const response = await fetch("https://bing.biturl.top/")
+  let data = await response.json();
+  let imgurl = data.url;
   return imgurl
 }
 module.exports = get_photo; 
